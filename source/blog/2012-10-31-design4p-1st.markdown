@@ -1,0 +1,86 @@
+---
+layout: post
+title: "第一回プログラマ向けデザイン勉強会を開催しました"
+date: 2012-10-31 01:04
+comments: true
+categories: design event
+---
+10/27(土)に [第一回プログラマ向けデザイン勉強会](http://connpass.com/event/1185/) を開催しました。
+
+この勉強会は毎月やっている [デザイナー向けプログラム部 (P4D)](https://www.facebook.com/groups/151208708350141/) の逆バージョンで、デザイナさんにプログラマがデザインを教わるという趣旨で開催しました。  
+そして講師役として、いつもP4Dの方でもお世話になっている [@machida](https://twitter.com/machida) さん、[@ken_c_lo](https://twitter.com/ken_c_lo) さん、[@saucerjp](https://twitter.com/saucerjp) さんの3人にお願いしました。  
+もっともこの3人をはじめ、P4Dに参加されているデザイナさんは普通にJSやFlash、ObjCなんか書いていたりして単にデザイナと呼んでいいのかどうかは怪しいところですが。
+
+
+## RailsエンジニアのためのTwitter Bootstrapカスタマイズ例
+
+<script async class="speakerdeck-embed" data-id="508e2052aee4d50002021f36" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js"></script>
+
+まずは@machidaさんのTwitter Bootstrapのカスタマイズ例の話からでした。
+
+このテーマはP4D参加のプログラマからしきりにリクエストのあった「Twitter Bootstrapを使うとみんなTwitter Bootstrapっぽいサイトになってしまうから、カスタマイズ方法を教えて！ただし手間はかけたくない！！」というワガママな願いを叶えてくれるものでした。
+
+特にデザインに悩んだときはとりあえずちょっとずつスタイルシートをいじった結果をスクリーンショットにとって、ぱっぱっと切り替えながらbefore / afterを比べると判断しやすい、という話が目から鱗でした。
+
+あとはこの次の@ken_c_loさんの発表でも再三出てくるのですが、[sass](http://sass-lang.com) と [compass](http://compass-style.org) が便利ですね。  
+特にsassに備わっている`darken`とか`lighten`だとかは僕も活用できていなかったので、今後使ってみようと思います。
+
+会場には意外とRailsエンジニア以外の方もいらっしゃったので、僭越ながら僕の方から途中でちょこっとgemとかsassだとかの解説を入れさせていただきました。
+
+
+## ズルいデザインテクニック
+
+<script async class="speakerdeck-embed" data-id="508b975236b3f8000201a95e" data-ratio="1.4143646408839778" src="//speakerdeck.com/assets/embed.js"></script>
+
+続いて@ken_c_loさんによる「少ない手間と知識で "それなり" に見せる、ズルいデザインテクニック」のお話でした。
+
+この発表については、発表中から勉強会終了後にいたるまでTLやはてブで多数の「ズルい！」の賞賛の声が上がっていました。
+
+まさにタイトルに偽り無しで、ちょっとした手間をかけるだけでとたんに実物っぽく見せる技を惜しげも無く大公開していただきました。
+
+sass, compassを使って実例が挙げられていますが、WebだけではなくてLTのスライドやスマホアプリなどにも応用ができそうな普遍的な内容でした。
+
+あとは使っているエディタを聞かれて「vimです」と答えた場面はおおいに盛り上がりました。
+
+
+## ノンデザイナーのための配色理論
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/14902681" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/saucerjp/ss-14902681" title="ノンデザイナーのための配色理論" target="_blank">ノンデザイナーのための配色理論</a> </strong> from <strong><a href="http://www.slideshare.net/saucerjp" target="_blank">saucerjp</a></strong> </div>
+
+最後は@saucerjpさんによる配色のお話でした。
+
+前半はまるで大学の授業のような感じで配色理論の大事なところだけをぎゅっと凝縮して教えていただきました。@saucerjpさんが完全に先生に見えましたw
+
+そして後半は、なんとこの日のために@saucerjpさんが開発した(!)色選びのためのWebアプリを使って、手軽にきれいな色選びができるという実演を行っていただきました。
+
+そのアプリはこちらです。[[ HUE / 360 ] The Color Scheme Application](http://hue360.herokuapp.com)
+
+JSのアプリケーションですが、Sinatra使ってHerokuにデプロイされているあたり、さすがですね。
+
+
+## Webサービスデザイン相談会
+
+即興ですが、2名の方に名乗り出ていただいて実際に動作しているWebアプリのデザインをデザイナ陣にコンサルしてもらう、というコーナーを設けました。
+
+議論が白熱して時間ギリギリいっぱいまでアドバイスを出していただけました。
+
+
+## 開催してみての感想
+
+募集を始める前から参加希望者が多いことは予想していましたが、予想以上の反響でびっくりしました。  
+また、Rubyist以外にもずいぶんリーチしていたことも意外でした。それだけデザインの知識を必要とするプログラマがたくさんいて、今までそのノウハウが十分にシェアされてきていなかったということの現れでしょうか。
+
+初の試みではありましたが、その後のソーシャルメディア等での反響を見るに、とてもいい勉強会にできたのでは、と思っています。
+
+発表してくださった3人の方、会場を貸してくださった KDDIウェブコミュニケーションズ様、そして参加してくださったみなさん、本当にありがとうございました。
+
+僕も素敵デザインなアプリが作れるように頑張りたいと思い、多いに刺激を貰いました。
+
+
+## 次回予告や宣伝など
+
+アポも許可もなんにも取っていませんが、町田さんのスライドによると次回は [@monoooki](https://twitter.com/monoooki) さんや [@9d](https://twitter.com/9d) さんや [@hmbrw](https://twitter.com/hmbrw) さんによるフォント、スマホアプリのデザインなどのお話が聞けるらしいです。
+
+あとは来年の1/13, 14に予定されている [東京Ruby会議10](http://tokyo10.rubykaigi.info) で半日分 P4D の枠をいただいていますので、そこで今回の再演か続編、及びワークショップもしくはデザイン相談会（要はまだあんまり詰めていない）なんかをやりたいと思っていますので要チェックです。
+
+デザイナ、エンジニア集まってお互いに学び合ったり、きゃっきゃウフフしたいという方はぜひお気軽に [デザイナー向けプログラム部 (P4D)](https://www.facebook.com/groups/151208708350141/) へご参加ください。
