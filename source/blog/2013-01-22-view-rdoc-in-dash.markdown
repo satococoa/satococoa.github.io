@@ -2,7 +2,7 @@
 layout: post
 title: "Dash で gem のドキュメントを参照する"
 date: 2013-01-22 18:17
-categories: ruby
+tags: ruby
 ---
 
 <blockquote class="twitter-tweet" data-in-reply-to="293602772425777154" lang="ja"><p>@<a href="https://twitter.com/satococoa">satococoa</a> やっぱウェブみにいくんですね、了解です。この辺も Dash とかで見れるようにしたいな</p>&mdash; Naoya Itoさん (@naoya_ito) <a href="https://twitter.com/naoya_ito/status/293602967179911168" data-datetime="2013-01-22T06:16:16+00:00">1月 22, 2013</a></blockquote>

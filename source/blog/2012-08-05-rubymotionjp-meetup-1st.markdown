@@ -2,7 +2,7 @@
 layout: post
 title: "第1回RubyMotion勉強会を開催しました"
 date: 2012-08-05 18:07
-categories: RubyMotion event
+tags: RubyMotion event
 ---
 報告が遅くなってしまいましたが、7/22(日)に無事に[第1回RubyMotion勉強会](http://connpass.com/event/665/)を開催しましたのでご報告します。
 

@@ -2,7 +2,7 @@
 layout: post
 title: "DashDoc を入れてみた"
 date: 2013-02-18 15:53
-categories: sublimetext
+tags: sublimetext
 ---
 Dash を Sublime Text からワンタッチで引くことができる DashDoc というプラグインを入れてみた。
 

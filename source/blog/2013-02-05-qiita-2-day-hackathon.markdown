@@ -2,7 +2,7 @@
 layout: post
 title: "Qiita 2-day Hackathon"
 date: 2013-02-05 02:21
-categories: event
+tags: event
 ---
 [Qiita 2-day Hackathon](http://qiitahackathon03.peatix.com) に参加しました。
 

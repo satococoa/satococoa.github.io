@@ -2,7 +2,7 @@
 layout: post
 title: "RubyでGoogleReaderAPIにアクセスする"
 date: 2012-11-06 22:37
-categories: ruby
+tags: ruby
 ---
 ## やりたかったこと
 あるサイトの過去記事を全部RDF or Atomで取得したかった。

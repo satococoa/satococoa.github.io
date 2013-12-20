@@ -2,7 +2,7 @@
 layout: post
 title: "Ruby 2.0.0-preview2 をインストール"
 date: 2012-12-02 17:11
-categories: ruby
+tags: ruby
 ---
 普通に `rbenv install 2.0.0-preview2` したら openssl を require できなかったので以下の手順を行った。
 

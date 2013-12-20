@@ -2,7 +2,7 @@
 layout: post
 title: "第一回プログラマ向けデザイン勉強会を開催しました"
 date: 2012-10-31 01:04
-categories: design event
+tags: design event
 ---
 10/27(土)に [第一回プログラマ向けデザイン勉強会](http://connpass.com/event/1185/) を開催しました。
 
