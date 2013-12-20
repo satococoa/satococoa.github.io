@@ -2,7 +2,7 @@
 layout: post
 title: "CentOS + chef-solo で rails が動くサーバを作る"
 date: 2012-09-13 15:32
-tags: rails linux
+tags: rails, linux
 ---
 CentOS + chef-solo で rails が動く All in one サーバを準備する
 
