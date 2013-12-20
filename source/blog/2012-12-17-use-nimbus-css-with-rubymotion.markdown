@@ -2,7 +2,7 @@
 layout: post
 title: "RubyMotion で Nimbus CSS を使ってみる"
 date: 2012-12-17 20:50
-tags: RubyMotion
+tags: rubymotion
 ---
 この記事は [RubyMotion Advent Calendar 2012](http://www.adventar.org/calendars/18) の17日目の記事です。
 

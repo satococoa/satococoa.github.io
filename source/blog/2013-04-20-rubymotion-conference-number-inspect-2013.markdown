@@ -2,7 +2,7 @@
 layout: post
 title: "RubyMotion Conference #inspect 2013"
 date: 2013-04-20 14:00
-tags: RubyMotion, event
+tags: rubymotion, event
 ---
 3/28, 29 にベルギーのブリュッセルで開催された [RubyMotion Conference #inspect 2013](http://www.rubymotion.com/conference/) に参加しました。
 

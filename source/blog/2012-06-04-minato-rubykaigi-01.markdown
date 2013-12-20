@@ -2,7 +2,7 @@
 layout: post
 title: "みなとRuby会議01"
 date: 2012-06-04 01:45
-tags: Community, event
+tags: community, event
 ---
 6/2(土)は[みなとRuby会議01](http://regional.rubykaigi.org/minato01)でした。
 

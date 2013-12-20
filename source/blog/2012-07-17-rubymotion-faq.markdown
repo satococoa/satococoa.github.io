@@ -2,7 +2,7 @@
 layout: post
 title: "RubyMotionでよくある質問"
 date: 2012-07-17 03:24
-tags: RubyMotion
+tags: rubymotion
 ---
 RubyMotionでよく聞かれる質問をまとめてみました。
 

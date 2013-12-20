@@ -2,7 +2,7 @@
 layout: post
 title: "RubyMotionと使っているツール"
 date: 2012-06-06 10:22
-tags: RubyMotion
+tags: rubymotion
 ---
 最近仕事でRubyMotionを使っています。
 
