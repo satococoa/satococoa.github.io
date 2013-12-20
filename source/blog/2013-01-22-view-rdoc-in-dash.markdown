@@ -2,7 +2,6 @@
 layout: post
 title: "Dash で gem のドキュメントを参照する"
 date: 2013-01-22 18:17
-comments: true
 categories: ruby
 ---
 

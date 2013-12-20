@@ -2,7 +2,6 @@
 layout: post
 title: "第4回 RubyMotion もくもく会"
 date: 2012-12-19 20:39
-comments: true
 categories: RubyMotion event
 ---
 この記事は [RubyMotion Advent Calendar 2012](http://www.adventar.org/calendars/18) の19日目の記事です。

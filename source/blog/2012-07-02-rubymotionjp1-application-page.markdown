@@ -2,7 +2,6 @@
 layout: post
 title: "第一回RubyMotion勉強会 募集開始"
 date: 2012-07-02 00:03
-comments: true
 categories: RubyMotion event
 ---
 参加者の募集ページをオープンしました。

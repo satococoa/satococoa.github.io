@@ -2,7 +2,6 @@
 layout: post
 title: "Hello Octopress"
 date: 2012-06-04 00:45
-comments: true
 categories: 日記
 ---
 遅ればせながら[Octopress](http://octopress.org/)を始めてみました。

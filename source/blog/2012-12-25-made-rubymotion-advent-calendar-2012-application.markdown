@@ -2,7 +2,6 @@
 layout: post
 title: "RubyMotion Advent Calendar 2012 のアプリをつくりました"
 date: 2012-12-25 22:06
-comments: true
 categories: RubyMotion
 ---
 この記事は [RubyMotion Advent Calendar 2012](http://www.adventar.org/calendars/18) の25日目の記事です。

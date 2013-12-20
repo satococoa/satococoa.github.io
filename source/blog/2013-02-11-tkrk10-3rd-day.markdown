@@ -2,7 +2,6 @@
 layout: post
 title: "東京 Ruby 会議 10 3日目に参加しました"
 date: 2013-02-11 01:36
-comments: true
 categories: event
 ---
 先日の東京 Ruby 会議 10 では大雪のため幻のスピーカーになってしまったのですが、今日はちゃんと発表してきました。

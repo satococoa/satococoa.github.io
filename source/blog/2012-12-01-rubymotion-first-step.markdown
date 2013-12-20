@@ -2,7 +2,6 @@
 layout: post
 title: "RubyMotion のはじめの一歩"
 date: 2012-12-01 01:07
-comments: true
 categories: RubyMotion
 ---
 

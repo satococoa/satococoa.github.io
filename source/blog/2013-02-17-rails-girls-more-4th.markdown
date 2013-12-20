@@ -2,7 +2,6 @@
 layout: post
 title: "第4回 Rails Girls, More 勉強会"
 date: 2013-02-17 12:58
-comments: true
 categories: event rails
 ---
 2/16(土) に万葉さんで開催された第4回 Rails Girls, More 勉強会に僭越ながらコーチ役として参加させていただきました。

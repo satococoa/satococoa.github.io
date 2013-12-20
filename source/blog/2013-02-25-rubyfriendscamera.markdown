@@ -2,7 +2,6 @@
 layout: post
 title: "RubyFriendsCamera has been released!"
 date: 2013-02-25 18:54
-comments: true
 categories: rubymotion
 ---
 Today I released RubyFriendsCamera and now available on [AppStore](https://itunes.apple.com/jp/app/ruby-friends-camera/id602073192?mt=8)!

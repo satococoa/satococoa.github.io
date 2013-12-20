@@ -2,7 +2,6 @@
 layout: post
 title: "httperf でパフォーマンステストを行う"
 date: 2012-10-25 01:23
-comments: true
 categories: linux
 ---
 httperf は ab (apache bench) と同じようなツールで、サーバの負荷テストに使うことができます。

@@ -2,7 +2,6 @@
 layout: post
 title: "MySQL の max_allowed_packet を設定"
 date: 2013-02-13 00:05
-comments: true
 categories: MySQL
 ---
 ActiveRecord で `Mysql2::Error: MySQL server has gone away` と言われて困ったのです。

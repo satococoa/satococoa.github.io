@@ -2,7 +2,6 @@
 layout: post
 title: "Rails Girls Tokyo 2nd に参加しました"
 date: 2013-03-03 12:53
-comments: true
 categories: rails event
 ---
 LT枠だけでの参加でしたが、[Rails Girls Tokyo 2nd](http://railsgirls.com/tokyo) に混ぜてもらいました！

@@ -2,7 +2,6 @@
 layout: post
 title: "RubyMotion のデバッグで NSZombieEnabled を使う"
 date: 2013-02-20 19:17
-comments: true
 categories: RubyMotion
 ---
 RubyMotion でアプリをつくるとき、デバッグがやはり大変です。

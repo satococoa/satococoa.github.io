@@ -2,7 +2,6 @@
 layout: post
 title: "RubyMotion の小ワザ"
 date: 2012-12-08 19:30
-comments: true
 categories: RubyMotion
 ---
 この記事は [RubyMotion Advent Calendar 2012](http://www.adventar.org/calendars/18) の8日目の記事です。

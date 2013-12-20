@@ -2,7 +2,6 @@
 layout: post
 title: "第一回RubyMotion勉強会のご案内"
 date: 2012-06-23 18:55
-comments: true
 categories: RubyMotion event
 ---
 以前ブログで告知したとおり、RubyMotion勉強会を開催したいと思います。

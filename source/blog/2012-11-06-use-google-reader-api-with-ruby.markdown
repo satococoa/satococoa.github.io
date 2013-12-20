@@ -2,7 +2,6 @@
 layout: post
 title: "RubyでGoogleReaderAPIにアクセスする"
 date: 2012-11-06 22:37
-comments: true
 categories: ruby
 ---
 ## やりたかったこと
