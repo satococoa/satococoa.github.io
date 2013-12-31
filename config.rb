@@ -65,8 +65,9 @@ page "/feed.xml", layout: false
 # Helpers
 ###
 activate :directory_indexes
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+activate :syntax
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
