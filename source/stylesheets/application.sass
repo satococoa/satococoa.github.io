@@ -1,2 +1,70 @@
 @import "base"
 
+$total-columns  : 4 // mobile first
+$column-width   : 4em
+$gutter-width   : 1em
+$grid-padding   : $gutter-width
+
+body
+  +container
+  line-height: 1.8
+  font-size: 1.0em
+  color: #333
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 1)
+  background-image: image-url('handmadepaper.png')
+  background-color: #f6f6f6
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+  pre
+    font-size: .8em
+    padding: 0.2em
+    border: 1px solid #ccc
+    +border-radius(3px)
+    overflow: auto
+  p
+    margin: 1em 0
+  a
+    +force-wrap
+    +hover-link
+    +link-colors(#5FAABF, #D49076)
+
+  h1, h2, h3, h4, h5, h6
+    font-weight: bold
+
+  .global_header
+    h1
+      font-size: 1.3em
+      margin: .5em 0
+    a
+      +link-colors(#333, #D49076)
+
+  .article
+    margin: 0 0 2em 0
+    h2
+      padding: .5em 0
+      font-size: 1.3em
+      span
+        font-size: .8em
+        color: #999
+    h3
+      border-bottom: 1px solid #ddd
+    .continue
+      margin-top: 1em
+
+  .global_footer
+    .recent
+      +span-columns(4 omega)
+    .tags
+      +span-columns(4 omega)
+    .by_year
+      +span-columns(4 omega)
+
+  // 大きい画面
+  +at-breakpoint(40em 12)
+    +container
+    .global_footer
+      .recent
+        +span-columns(4)
+      .tags
+        +span-columns(4)
+      .by_year
+        +span-columns(4 omega)

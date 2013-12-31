@@ -1,31 +1,40 @@
 !!! 5
 %html
   %head
-    %meta{:charset => "utf-8"}
-    %meta{:content => "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{charset: "utf-8"}
+    %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
+    %meta{content: "IE=edge;chrome=1", 'http-equiv' => "X-UA-Compatible"}
     = stylesheet_link_tag 'application'
     %title
-      Blog Title#{' - ' + current_article.title unless current_article.nil?}
+      satococoa's blog#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
   %body
-    #main{:role => "main"}
+    .global_header
+      %h1
+        = link_to "satococoa's blog", '/'
+
+    #main{role: "main"}
       = yield
-    %aside
-      %h2 Recent Articles
-      %ul
-        - blog.articles[0...5].each do |article|
-          %li
-            = link_to article.title, article
-            %span= article.date.strftime('%Y-%m-%d')
-      %h2 Tags
-      %ul
-        - blog.tags.each do |tag, articles|
-          %li
-            = link_to tag, tag_path(tag)
-            (#{articles.size})
-      %h2 By Year
-      %ul
-        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          %li
-            = link_to year, blog_year_path(year)
-            (#{articles.size})
+
+    .global_footer
+      .recent
+        %h2 Recent Articles
+        %ul
+          - blog.articles[0...5].each do |article|
+            %li
+              = link_to article.title, article
+              %span= article.date.strftime('%Y-%m-%d')
+      .tags
+        %h2 Tags
+        %ul
+          - blog.tags.each do |tag, articles|
+            %li
+              = link_to tag, tag_path(tag)
+              (#{articles.size})
+      .by_year
+        %h2 By Year
+        %ul
+          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+            %li
+              = link_to year, blog_year_path(year)
+              (#{articles.size})
