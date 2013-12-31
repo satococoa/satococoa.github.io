@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
-    = stylesheet_link_tag 'style'
+    = stylesheet_link_tag 'application'
     %title
       Blog Title#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
