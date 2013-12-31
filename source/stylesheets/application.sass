@@ -39,32 +39,47 @@ body
 
   .article
     margin: 0 0 2em 0
+    padding: 0
     h2
-      padding: .5em 0
       font-size: 1.3em
       span
         font-size: .8em
         color: #999
     h3
       border-bottom: 1px solid #ddd
+    .tags
+      +inline-block-list
+      > li
+        a
+          display: block
+          background-color: #fff
+          padding: 0 2px
+          +border-radius(3px)
     .continue
       margin-top: 1em
 
   .global_footer
-    .recent
-      +span-columns(4 omega)
-    .tags
-      +span-columns(4 omega)
-    .by_year
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+    +box-shadow(rgba(255, 255, 255, 1) 0 1px 0)
+    h2
+      padding: 1em 0
+    div
+      padding-bottom: 1em
       +span-columns(4 omega)
 
   // 大きい画面
   +at-breakpoint(40em 12)
     +container
+    .article
+      +span-columns(12 omega)
+      .meta
+        +span-columns(2)
+      .main
+        +span-columns(10 omega)
     .global_footer
       .recent
-        +span-columns(4)
+        +span-columns(6)
       .tags
-        +span-columns(4)
+        +span-columns(3)
       .by_year
-        +span-columns(4 omega)
+        +span-columns(3 omega)

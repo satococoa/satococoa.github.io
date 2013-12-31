@@ -23,7 +23,6 @@
           - blog.articles[0...5].each do |article|
             %li
               = link_to article.title, article
-              %span= article.date.strftime('%Y-%m-%d')
       .tags
         %h2 Tags
         %ul
