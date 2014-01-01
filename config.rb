@@ -113,3 +113,15 @@ activate :deploy do |deploy|
   # deploy.branch   = "custom-branch" # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
+
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
+configure :build do
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-32351198-1'
+  end
+end
