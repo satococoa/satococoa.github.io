@@ -20,5 +20,8 @@ per_page: 5
       %p.continue
         = link_to '続きを読む &raquo;', article
 - if paginate
-  - if next_page
-    %p= link_to 'Next page', next_page
+  %ul.paginate
+    - if prev_page
+      %li= link_to '&lt; 前のページ', prev_page
+    - if next_page
+      %li= link_to '次のページ &gt;', next_page
