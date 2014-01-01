@@ -1,18 +1,23 @@
 @import "base"
 
-$total-columns  : 4 // mobile first
-$column-width   : 4em
-$gutter-width   : 1em
-$grid-padding   : $gutter-width
+$total-columns: 4 // mobile first
+$column-width: 4em
+$gutter-width: 1em
+$grid-padding: $gutter-width
+
+$text-color: #333
+$background-color: #f6f6f6
+$link-color: darken(#5FAABF, 20%)
+$link-color-highlight: #D49076
 
 body
   +container
   line-height: 1.8
   font-size: 1.0em
-  color: #333
+  color: $text-color
   text-shadow: -1px 1px 0 rgba(255, 255, 255, 1)
   background-image: image-url('handmadepaper.png')
-  background-color: #f6f6f6
+  background-color: $background-color
   font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
   pre
     font-size: .8em
@@ -25,7 +30,7 @@ body
   a
     +force-wrap
     +hover-link
-    +link-colors(#5FAABF, #D49076)
+    +link-colors($link-color, $link-color-highlight)
 
   h1, h2, h3, h4, h5, h6
     font-weight: bold
@@ -36,7 +41,7 @@ body
       font-size: 1.3em
       margin: .5em 0
     a
-      +link-colors(#333, #D49076)
+      +link-colors($text-color, $link-color-highlight)
 
   .page_type
     color: #C95E34
