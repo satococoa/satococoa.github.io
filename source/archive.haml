@@ -1,0 +1,15 @@
+---
+pageable: true
+---
+%h1.page_type
+  Archive: 
+  - case page_type
+  - when 'day'
+    = Date.new(year, month, day).strftime('%Y-%m-%d')
+  - when 'month'
+    = Date.new(year, month, 1).strftime('%Y-%m')
+  - when 'year'
+    = year
+  - when 'tag'
+    = tagname
+= partial "articles", locals: { articles: articles }
