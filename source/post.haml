@@ -5,10 +5,24 @@
     %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
     %meta{content: "IE=edge;chrome=1", 'http-equiv' => "X-UA-Compatible"}
     = stylesheet_link_tag 'application'
+    %script{type: "text/javascript", src: "http://b.st-hatena.com/js/bookmark_button.js", charset: "utf-8", async: "async"}
+    :javascript
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
     %title
       satococoa's blog#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
   %body
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=252361011596763";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
     .global_header
       %h1
         = link_to "satococoa's blog", '/'
@@ -23,6 +37,14 @@
             - current_article.tags.each do |tag|
               %li
                 = link_to tag, tag_path(tag)
+          %ul.social
+            %li.hatena
+              %a{href: "http://b.hatena.ne.jp/entry/#{data.site.base_url}#{current_article.url}", class: 'hatena-bookmark-button', data: {:'hatena-bookmark-title' => 'タイトル', :'hatena-bookmark-layout' => 'standard-balloon', :'hatena-bookmark-lang' => 'ja'}, title: 'このエントリーをはてなブックマークに追加'}
+                %img{src: 'http://b.st-hatena.com/images/entry-button/button-only@2x.png', alt: 'このエントリーをはてなブックマークに追加', width: 20, height: 20, style: 'border: none;'}
+            %li.twitter
+              %a{href: 'https://twitter.com/share', class: 'twitter-share-button', data: {lang: 'en', url: data.site.base_url + current_article.url} } Tweet
+            %li.facebook
+              .fb-like{data: {href: data.site.base_url + current_article.url, layout: 'button_count', action: 'like', :'show-faces' => 'false', share: 'false'} }
         .main
           %h2
             = link_to current_article.title, current_article

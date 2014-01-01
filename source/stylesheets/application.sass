@@ -49,6 +49,7 @@ body
     padding: 0
     h2
       font-size: 1.3em
+      padding: .5em 0
       span
         font-size: .8em
         color: #999
@@ -57,14 +58,16 @@ body
     .meta
       color: #666
       +alnum-font
-    .tags
-      +inline-block-list
-      > li
-        a
-          display: block
-          background-color: #fff
-          padding: 0 2px
-          +border-radius(3px)
+      .tags
+        +inline-block-list
+        > li
+          a
+            display: block
+            background-color: #fff
+            padding: 0 2px
+            +border-radius(3px)
+      .social
+        margin-top: 1em
     .continue
       margin-top: 1em
 
