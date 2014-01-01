@@ -1,9 +1,2 @@
 - page_articles.each do |article|
   = partial "article", locals: { continue: true, article: article }
-
-- if paginate
-  %ul.paginate
-    - if prev_page
-      %li= link_to '&lt; 前のページ', prev_page
-    - if next_page
-      %li= link_to '次のページ &gt;', next_page

@@ -5,10 +5,6 @@ $column-width   : 4em
 $gutter-width   : 1em
 $grid-padding   : $gutter-width
 
-@import url(http://fonts.googleapis.com/css?family=Exo+2:200)
-=alnum-font
-  font-family: 'Exo 2', sans-serif
-
 body
   +container
   line-height: 1.8
@@ -35,6 +31,7 @@ body
     font-weight: bold
 
   .global_header
+    padding: 1em 0
     h1
       font-size: 1.3em
       margin: .5em 0
@@ -45,6 +42,8 @@ body
     color: #C95E34
 
   .article
+    border-top: 1px solid rgba(255, 255, 255, 1)
+    +box-shadow(rgba(0, 0, 0, .1) 0 -1px 0)
     margin: 0 0 2em 0
     padding: 0
     h2
@@ -60,7 +59,7 @@ body
       +alnum-font
       .tags
         +inline-block-list
-        > li
+        li
           a
             display: block
             background-color: #fff
@@ -74,6 +73,11 @@ body
   .paginate
     clear: both
     +inline-block-list
+    text-align: right
+    li
+      a
+        display: inline-block
+        padding: 0 2px
 
   .global_footer
     clear: both
@@ -91,6 +95,7 @@ body
     .article
       +span-columns(12 omega)
       .meta
+        padding-top: .8em
         +span-columns(2)
       .main
         +span-columns(10 omega)

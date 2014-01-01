@@ -12,4 +12,11 @@ pageable: true
     = year
   - when 'tag'
     = tagname
-= partial "articles", locals: { articles: articles }
+= partial "articles", locals: { page_articles: page_articles }
+
+- if paginate
+  %ul.paginate
+    - if prev_page
+      %li= link_to '&lt; 前のページ', prev_page
+    - if next_page
+      %li= link_to '次のページ &gt;', next_page
