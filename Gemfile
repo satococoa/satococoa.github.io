@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~> 3.2.0"
 gem "middleman-blog", "~> 3.5.1"
 gem 'middleman-deploy'
+gem 'middleman-google-analytics'
 gem 'redcarpet'
 gem 'nokogiri'
 gem "builder", "~> 3.0"
