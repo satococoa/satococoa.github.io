@@ -1,17 +1,23 @@
 ---
 pageable: true
+per_page: 3
 ---
-%h1.page_type
-  Archive: 
-  - case page_type
-  - when 'day'
-    = Date.new(year, month, day).strftime('%Y-%m-%d')
-  - when 'month'
-    = Date.new(year, month, 1).strftime('%Y-%m')
-  - when 'year'
-    = year
-  - when 'tag'
-    = tagname
+
+%nav.topic_path
+  %ul
+    %li
+      = link_to 'Top', '/'
+    %li
+      - case page_type
+      - when 'day'
+        = Date.new(year, month, day).strftime('Day: %Y-%m-%d')
+      - when 'month'
+        = Date.new(year, month, 1).strftime('Month: %Y-%m')
+      - when 'year'
+        = "Year: #{year}"
+      - when 'tag'
+        = "Tag: #{tagname}"
+
 = partial "articles", locals: { page_articles: page_articles }
 
 - if paginate

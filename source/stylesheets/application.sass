@@ -28,7 +28,6 @@ body
   p
     margin: 1em 0
   a
-    +force-wrap
     +hover-link
     +link-colors($link-color, $link-color-highlight)
 
@@ -36,21 +35,37 @@ body
     font-weight: bold
 
   .global_header
+    +span-columns(4)
     padding: 1em 0
     h1
+      +span-columns(3)
       font-size: 1.3em
       margin: .5em 0
     a
       +link-colors($text-color, $link-color-highlight)
+    .self_links
+      +span-columns(1 omega)
+      +inline-block-list
+      margin: .9em 0
+      text-align: right
 
-  .page_type
-    color: #C95E34
+  nav.topic_path
+    padding: .5em 0
+    li
+      display: inline
+      list-style-type: none
+      &:before
+        content: ' > '
+      &:first-child:before
+        content: none
 
   .article
     border-top: 1px solid rgba(255, 255, 255, 1)
     +box-shadow(rgba(0, 0, 0, .1) 0 -1px 0)
     margin: 0 0 2em 0
     padding: 0
+    a
+      +force-wrap
     h2
       font-size: 1.3em
       padding: .5em 0
@@ -97,6 +112,15 @@ body
   // 大きい画面
   +at-breakpoint(40em 12)
     +container
+    .global_header
+      +span-columns(12)
+      h1
+        +span-columns(8)
+      .self_links
+        font-size: 1.3em
+        margin: .5em 0
+        +span-columns(4 omega)
+
     .article
       +span-columns(12 omega)
       .meta

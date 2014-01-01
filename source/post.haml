@@ -13,41 +13,15 @@
       satococoa's blog#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
   %body
-    #fb-root
-    :javascript
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=252361011596763";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+    = partial 'header'
 
-    .global_header
-      %h1
-        = link_to "satococoa's blog", '/'
+    %nav.topic_path
+      %ul
+        %li
+          = link_to 'Top', '/'
+        %li= current_article.title
 
     #main{role: "main"}
       = partial "article", locals: { continue: false, article: current_article }
 
-    .global_footer
-      .recent
-        %h2 Recent Articles
-        %ul
-          - blog.articles[0...5].each do |article|
-            %li
-              = link_to article.title, article
-      .tags
-        %h2 Tags
-        %ul
-          - blog.tags.each do |tag, articles|
-            %li
-              = link_to tag, tag_path(tag)
-              (#{articles.size})
-      .by_year
-        %h2 By Year
-        %ul
-          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-            %li
-              = link_to year, blog_year_path(year)
-              (#{articles.size})
+    = partial 'footer'

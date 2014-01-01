@@ -1,0 +1,20 @@
+#fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=252361011596763";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+.global_header
+  %h1
+    = link_to "satococoa's blog", '/'
+  .self_links
+    = link_to 'https://facebook.com/satoshi.ebisawa' do
+      %i.fa.fa-facebook
+    = link_to 'https://twitter.com/satococoa' do
+      %i.fa.fa-twitter
+    = link_to 'https://github.com/satococoa' do
+      %i.fa.fa-github

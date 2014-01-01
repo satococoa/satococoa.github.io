@@ -1,7 +1,14 @@
 ---
 pageable: true
-per_page: 5
+per_page: 3
 ---
+%nav.topic_path
+  %ul
+    - if paginate && page_number > 1
+      %li
+        = link_to 'Top', '/'
+      %li= "Page: #{page_number}"
+
 = partial "articles", locals: { page_articles: page_articles }
 
 - if paginate
