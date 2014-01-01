@@ -10,3 +10,4 @@ gem "builder", "~> 3.0"
 gem "middleman-livereload", "~>3.0"
 gem 'middleman-syntax'
 gem 'susy'
+gem 'font-awesome-middleman'
