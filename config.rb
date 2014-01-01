@@ -27,6 +27,7 @@ activate :blog do |blog|
   blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+  blog.new_article_template = 'new_article_template.haml'
 end
 
 page "/feed.xml", layout: false
