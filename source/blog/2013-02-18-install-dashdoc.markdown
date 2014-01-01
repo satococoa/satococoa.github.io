@@ -13,7 +13,7 @@ Dash を Sublime Text からワンタッチで引くことができる DashDoc �
 
 Preferences > Package Settings > DashDoc > Key Bindings - User
 
-```
+```json
 [
   { "keys": ["ctrl+h"], "command": "left_delete"},
   { "keys": ["shift+command+h"], "command": "dash_doc"},
@@ -27,7 +27,7 @@ Preferences > Package Settings > DashDoc > Key Bindings - User
 あと、RubyMotion のドキュメントを直で引きたかったので追加した。
 Preferences > Package Settings > DashDoc > Settings - User
 
-```
+```json
 {
   "syntax_sensitive": false,
   "syntax_docset_map":
@@ -72,7 +72,7 @@ Preferences > Package Settings > DashDoc > Settings - User
 
 Preferences > Package Settings > DashDoc > Key Bindings - Default
 
-```
+```json
 # 全部コメントアウト
 [
   // { "keys": ["ctrl+h"], "command": "dash_doc"},
@@ -84,7 +84,7 @@ Preferences > Package Settings > DashDoc > Key Bindings - Default
 
 Preferences > Package Settings > DashDoc > Key Bindings - User
 
-```
+```json
 [
   { "keys": ["shift+command+h"], "command": "dash_doc"},
   { "keys": ["ctrl+command+h"], "command": "dash_doc",

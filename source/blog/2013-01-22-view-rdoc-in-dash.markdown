@@ -6,7 +6,6 @@ tags: ruby
 ---
 
 <blockquote class="twitter-tweet" data-in-reply-to="293602772425777154" lang="ja"><p>@<a href="https://twitter.com/satococoa">satococoa</a> やっぱウェブみにいくんですね、了解です。この辺も Dash とかで見れるようにしたいな</p>&mdash; Naoya Itoさん (@naoya_ito) <a href="https://twitter.com/naoya_ito/status/293602967179911168" data-datetime="2013-01-22T06:16:16+00:00">1月 22, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 こんな話から、インストールした gem のドキュメントが見られる風な Docset が Dash にあったのを思い出してちょっと調べてみました。
 
@@ -29,7 +28,7 @@ $ gem rdoc --rdoc bubble-wrap
 
 こんな感じです。
 
-{% img /images/201301/rdoc-in-dash.png %}
+![Rdoc in Dash](/images/201301/rdoc-in-dash.png)
 
 
 ### ついでに

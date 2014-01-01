@@ -51,7 +51,7 @@ eth0 は NAT としてセットアップされているので VM からインタ
 
 vi /etc/sysconfig/network-scripts/ifcfg-eth1
 
-```
+```shell
 DEVICE="eth1"
 BOOTPROTO="static" # 変更
 HWADDR="XX:XX:XX:XX:XX:XX"
@@ -126,7 +126,7 @@ $ chmod 600 .ssh/authorized_keys
 
 sshd の設定、再起動。
 
-```
+```shell
 $ sudo vi /etc/ssh/sshd_config
 # 変更点
 Port XXXX # 適当なポートに変更
@@ -143,7 +143,7 @@ $ ssh deploy@192.168.56.10 -p XXXX
 
 ### iptables
 
-```
+```shell
 $ sudo iptables -L # 現状を確認
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
@@ -214,7 +214,7 @@ $ sudo service iptables save
 ### chef のインストールまで
 ruby, chef をインストールするのに必要なところまでインストールする。
 
-```
+```shell
 # ruby インストールに必要なパッケージ
 $ sudo yum -y install git gcc gcc-c++ make autoconf openssl-devel zlib-devel readline-devel curl-devel gettext-devel
 $ curl -O http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
@@ -256,7 +256,7 @@ $ cd chef-repo
 
 chef-solo の設定を config/solo.rb に作る。
 
-```
+```ruby
 file_cache_path "/home/deploy/chef-repo"
 cookbook_path "/home/deploy/chef-repo/cookbooks"
 role_path "/home/deploy/chef-repo/roles"

@@ -13,7 +13,7 @@ RubyMotion でアプリをつくるとき、デバッグがやはり大変です
 
 例えば以下の例はあまりに単純すぎますが、当然アプリがすとんと落ちます。
 
-```
+```ruby
 # app_delegate.rb
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
@@ -40,6 +40,7 @@ end
 ```
 
 実行するとこうなります。
+
 ```
 $ rake
      Build ./build/iPhoneSimulator-6.1-Development
@@ -73,7 +74,11 @@ Tasks: TOP => default => simulator
 (See full trace by running task with --trace)
 ```
 
-`2013-02-20 20:38:53.449 DebugDemo[21494:c07] *** -[UILabel superview]: message sent to deallocated instance 0xf1c9f40` って出ていますよね？これで、UILabelクラスのインスタンスが原因であることがわかります。
+```
+2013-02-20 20:38:53.449 DebugDemo[21494:c07] *** -[UILabel superview]: message sent to deallocated instance 0xf1c9f40
+```
+
+って出ていますよね？これで、UILabelクラスのインスタンスが原因であることがわかります。
 
 NSZombieEnabled については [NSZombieEnabled - CocoaDev](http://cocoadev.com/wiki/NSZombie) がわかりやすいです。  
 ざっくり説明すると、解放されたオブジェクトのクラスを動的に `_NSZombie` に変更し、そのメモリ領域を解放させないようにしているおかげで上記のような情報をログに出してくれているようです。

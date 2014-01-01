@@ -19,7 +19,7 @@ $ rake device id=hogehoge
 
 この際に使うidというのは Identifier のことで Xcode の Organizer で調べることができます。
 
-{% img /images/201212/identifier-in-organizer.png %}
+![Xcode organizer](/images/201212/identifier-in-organizer.png)
 
 
 ## 設定を yaml ファイルにまとめる
@@ -29,7 +29,8 @@ $ rake device id=hogehoge
 僕は yaml にそういった設定情報を書くようにしています。
 
 yaml ファイルはこんな感じ。
-```
+
+```yml
 testflight:
   api_token: API_TOKEN
   team_token: TEAM_TOKEN
@@ -52,29 +53,31 @@ release:
 ```
 
 Rakefile 内でこんな風に使います。
-```
-  require 'yaml'
-  conf_file = './config.yml'
-  if File.exists?(conf_file)
-    config = YAML::load_file(conf_file)
-    app.testflight.sdk        = 'vendor/TestFlightSDK'
-    app.testflight.api_token  = config['testflight']['api_token']
-    app.testflight.team_token = config['testflight']['team_token']
-    app.testflight.notify     = true
-    app.testflight.distribution_lists = config['testflight']['distribution_lists']
-    app.identifier = config['identifier']
-    app.info_plist['CFBundleURLTypes'] = [
-      { 'CFBundleURLName' => config['identifier'],
-        'CFBundleURLSchemes' => ['coolapp'] }
-    ]
 
-    env = ENV['ENV'] || 'development'
-    app.codesign_certificate = config[env]['certificate']
-    app.provisioning_profile = config[env]['provisioning']
-  end
+```ruby
+require 'yaml'
+conf_file = './config.yml'
+if File.exists?(conf_file)
+  config = YAML::load_file(conf_file)
+  app.testflight.sdk        = 'vendor/TestFlightSDK'
+  app.testflight.api_token  = config['testflight']['api_token']
+  app.testflight.team_token = config['testflight']['team_token']
+  app.testflight.notify     = true
+  app.testflight.distribution_lists = config['testflight']['distribution_lists']
+  app.identifier = config['identifier']
+  app.info_plist['CFBundleURLTypes'] = [
+    { 'CFBundleURLName' => config['identifier'],
+      'CFBundleURLSchemes' => ['coolapp'] }
+  ]
+
+  env = ENV['ENV'] || 'development'
+  app.codesign_certificate = config[env]['certificate']
+  app.provisioning_profile = config[env]['provisioning']
+end
 ```
 
 testflight で配布するときはこんな感じ。
+
 ```
 $ rake testflight notes="hogehoge" mode=release ENV=adhoc
 ```
@@ -94,7 +97,7 @@ $ motion update --force-version=1.15
 `Object#tap` を使うと、以下のように書くことができます。初期化の固まりを視覚的に認識しやすいので僕は気に入っています。
 
 
-```
+```ruby
 # 普通に書くと...
 label = UILabel.new
 label.frame = [[0, 0], [320, 10]]
@@ -130,7 +133,7 @@ end
 
 もちろん、iOS 5.0 で Social フレームワークが使えるわけではないので以下のように切り分けは必要です。
 
-```
+```ruby
 def can_open_tweet?
   if defined?(SLComposeViewController)
     SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)
@@ -158,7 +161,7 @@ $ bundle install --path vendor/bundle # gem をインストールするパスを
 
 Gemfile はこんな感じになります。
 
-```
+```ruby
 source "https://rubygems.org"
 
 gem 'bubble-wrap'
@@ -169,7 +172,7 @@ gem 'motion-testflight'
 
 Bundler でインストールした gem を使うには Rakefile の冒頭の以下のようにします。
 
-```
+```ruby
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project'
@@ -215,7 +218,7 @@ $ rake mode=release
 
 Rakefile の中では `app.development`, `app.release` というメソッドが使えます。それぞれブロックの中身が対応するモードのときにのみ実行されます。
 
-```
+```ruby
 Motion::Project::App.setup do |app|
   # ...
   app.development do

@@ -7,6 +7,7 @@ tags: ruby
 普通に `rbenv install 2.0.0-preview2` したら openssl を require できなかったので以下の手順を行った。
 
 環境は
+
 - Mac OS X 10.8.2 (10.7.xからのアップグレード)
 - brew
 - brew でインストールした rbenv, ruby-build を使用

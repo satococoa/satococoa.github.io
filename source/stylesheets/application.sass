@@ -20,11 +20,21 @@ body
   background-color: $background-color
   font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
   pre
-    font-size: .8em
-    padding: 0.2em
+    font-family: monospace
+    padding: .5em 1em
+    margin: 1em 0
     border: 1px solid #ccc
     +border-radius(3px)
     overflow: auto
+  code
+    font-family: monospace
+    padding: .5em
+    background-color: #fff
+    +border-radius(3px)
+  blockquote
+    background-color: #ddd
+    border-left: 8px solid lighten(#999, 20%)
+    padding: .5em
   p
     margin: 1em 0
   a
@@ -73,10 +83,17 @@ body
         font-size: .8em
         color: #999
     h3
+      padding: 2em 0 0 0
+      margin-bottom: .5em
       border-bottom: 1px solid #ddd
+    li
+      list-style-type: disc
+      list-style-position: inside
     .meta
       color: #666
       +alnum-font
+      li
+        list-style-type: none
       .tags
         +inline-block-list
         li

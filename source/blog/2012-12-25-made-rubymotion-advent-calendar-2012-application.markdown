@@ -12,7 +12,7 @@ tags: rubymotion
 
 （具体的には意外とカレンダーの表示に使っているライブラリの自由度が狭くて難儀してました。）
 
-{% img /images/201212/rubymo.png %}
+![rubymo](/images/201212/rubymo.png)
 
 リポジトリは以下です。
 

@@ -24,10 +24,10 @@ tags: rubymotion
 普通に motion-cocoapods でインストールできます。
 Rakefile にこんな感じに書いて、いつも通り`$ rake`でOKです。
 
-```
-  app.pods do
-    pod 'Nimbus'
-  end
+```ruby
+app.pods do
+  pod 'Nimbus'
+end
 ```
 
 
@@ -36,7 +36,8 @@ Rakefile にこんな感じに書いて、いつも通り`$ rake`でOKです。
 Nimbus CSS 関連のコードだけ貼ります。基本的には公式のドキュメントの [Nimbus: Nimbus CSS](http://docs.nimbuskit.info/NimbusCSS.html) にある "Recommended Procedure for Storing Stylesheets" をなぞっているだけです。
 
 app/app_delegate.rb
-```
+
+```ruby
 class AppDelegate
   attr_accessor :stylesheet_cache
 
@@ -62,7 +63,8 @@ end
 ```
 
 app/main_controller.rb
-```
+
+```ruby
 class MainController < UIViewController
   def dealloc
     # BubbleWrap を使っています。
@@ -112,7 +114,8 @@ end
 ```
 
 resources/css/main.css
-```
+
+```css
 .background {
   background-color: red;
 }
@@ -130,7 +133,7 @@ UILabel {
 
 これで実行すると、下図のような結果になるかと思います。
 
-{% img /images/201212/nimbus.png %}
+![Nimbus CSS](/images/201212/nimbus.png)
 
 ちなみに、使用できる CSS のプロパティ一覧は [Nimbus: Nimbus CSS](http://docs.nimbuskit.info/NimbusCSS.html) の "Supported CSS Properties" のところにあります。  
 本当は view の位置も調整できると嬉しかったのですが、まだ未対応のようです。

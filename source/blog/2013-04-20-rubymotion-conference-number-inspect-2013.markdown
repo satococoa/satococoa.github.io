@@ -159,7 +159,7 @@ Ruby で実装された [Redcar](http://redcareditor.com) というエディタ�
 
 以上で 1 日目が終わり、その日の夜は @watson1978 さんとムール貝食べてきました。
 
-{% img /images/201304/dinner.jpg %}
+![ムール貝](/images/201304/dinner.jpg)
 
 
 ### 2 日目
@@ -209,7 +209,7 @@ RubyMotion でより Ruby らしくアプリケーションを作るためのラ
 
 例えば delegate の代わりに callback を使うという例で以下のコードが挙げられていました。
 
-```
+```ruby
 # CoreLocation delegate
 Location.get do |location|
   p location[:to]
@@ -313,7 +313,7 @@ Laurent さんのこれまでの半生と、今後の RubyMotion のロードマ
 
 暗い場所だったのでだいぶブレましたが、アフターパーティで Laurent さんと撮りました。
 
-{% img /images/201304/laurent.jpg %}
+![with Laurent](/images/201304/laurent.jpg)
 
 英語力の不足をひしひしと感じる中、なんとか発表の内容を理解しようと必死の2日間でした。なかなか参加者の方とコミュニケーションを取ることも大変だったのですが、最終日のアフターパーティではお酒の勢いを借りて色んな人とお話しできてよかったです。
 

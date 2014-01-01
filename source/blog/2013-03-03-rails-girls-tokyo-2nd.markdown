@@ -21,15 +21,11 @@ LT枠だけでの参加でしたが、[Rails Girls Tokyo 2nd](http://railsgirls.
 
 コメントは全て僕の主観ですのでご注意を。
 
-----
-
 ### RailsGirls, More
 
 公式なので、間違いなくここがおすすめ。参加方法はFBグループかメールで参加者の方に届くそうです。
 
 お問い合わせ先は [@yotii23](https://twitter.com/yotii23) さんか [@publichtml](https://twitter.com/publichtml) さんでいいのかな？
-
-----
 
 ### [P4D デザイナー向けプログラム部](http://prog4designer.github.com/)
 LT させてもらったので概要は省略。
@@ -44,8 +40,6 @@ LT させてもらったので概要は省略。
 - [@satococoa](http://twitter.com/satococoa)  
 僕ですね。最近は[RubyMotion JP](http://rubymotion.jp) の人。
 
-----
-
 ### [Sendagaya.rb](https://ishikitakai.com/groups/1)
 
 毎週月曜日に meetup を開催している Ruby コミュニティです。今は新宿で毎週やっているのでアクセスの良さもポイント！
@@ -54,7 +48,6 @@ LT させてもらったので概要は省略。
 
 紹介スライド -> [ボクが東京に来て作ったモノ](http://decknotes.com/slides/17) by @fukajun
 
-
 #### 会える人
 - [@fukajun](http://twitter.com/fukajun) さん  
 Rails エンジニア。[DeckNotes](http://decknotes.com/) 作った人。
@@ -62,8 +55,6 @@ Rails エンジニア。[DeckNotes](http://decknotes.com/) 作った人。
 Rails エンジニア。[we love heroku](http://welove.herokuapp.com) 作った人。
 - [@tkawa](https://twitter.com/tkawa) さん  
 Rails エンジニア。REST の人。
-
-----
 
 ### [Yokohama.rb](http://bukt.org/groups/3)
 
@@ -78,8 +69,6 @@ Rails エンジニア。REST の人。
 Rails エンジニア。[みなとRuby会議01](http://regional.rubykaigi.org/minato01) 実行委員長。
 - [@hamakn](https://twitter.com/hamakn) さん  
 Rails エンジニア。[デブサミで発表](http://d.hatena.ne.jp/hamakn/20130217) されてました。
-
-----
 
 それぞれのコミュニティですごい人がたくさんいるのですが、失礼ながらとりあえずパッと頭に浮かんだ人だけ書かせていただきました。
 

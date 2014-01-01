@@ -8,7 +8,7 @@ ActiveRecord で `Mysql2::Error: MySQL server has gone away` と言われて困�
 
 さっぱり原因がわからずに同僚の [@DianthuDia](https://twitter.com/dianthudia) 先生に聞いてみたところ、どうやら大きなデータを MEDIUMTEXT 型のカラムに保存しようとしたときに、以下の MySQL の設定にひっかかって失敗していたらしいです。
 
-```
+```sql
 > show variables like 'max_allowed_packet';
 +--------------------+---------+
 | Variable_name      | Value   |
@@ -34,7 +34,7 @@ MySQLを再起動して設定完了です。
 
 再起動無しで設定するには `GLOBAL VARIABLES` を設定します。
 
-```
+```sql
 $ mysql -uroot -p
 > set global max_allowed_packet = 16 * 1024 * 1024;
 > show global variables like 'max_allowed_packet';    

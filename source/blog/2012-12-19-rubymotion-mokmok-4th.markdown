@@ -10,7 +10,7 @@ tags: rubymotion, event
 
 前回の様子は id:naoya さんの [RubyMotionもくもく会](http://d.hatena.ne.jp/naoya/20121129/1354186463) のエントリをご参照ください。
 
-{% img /images/201212/rubymotion-mokmok-4th.jpg %}
+![第4回 RubyMotion もくもく会](/images/201212/rubymotion-mokmok-4th.jpg)
 
 ## 目的
 大きな目的は、RubyMotion ユーザー間のつながりを作り、ノウハウ共有の場をつくるということです。
