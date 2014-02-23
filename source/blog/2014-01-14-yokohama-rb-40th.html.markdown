@@ -2,7 +2,7 @@
 layout: post
 title: Yokohama.rb 40th
 date: 2014-01-14 07:06:57 +0900
-tags: Yokohama.rb, event
+tags: yokohamarb, event
 ---
 [Yokohama.rb Monthly Meetup #40](http://yokohamarb.doorkeeper.jp/events/7112) に参加してきました。
 
