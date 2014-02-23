@@ -4,8 +4,9 @@
       = link_to article.title, article
     - if continue
       = article.summary(500)
-      %p.continue
-        = link_to '続きを読む &raquo;', article
+      - unless article.summary(500) == article.body
+        %p.continue
+          = link_to '続きを読む &raquo;', article
     - else
       = article.body
   .meta
@@ -23,4 +24,4 @@
       %li.twitter
         %a{href: 'https://twitter.com/share', class: 'twitter-share-button', data: {lang: 'en', url: data.site.base_url + article.url} } Tweet
       %li.facebook
-        .fb-like{data: {href: data.site.base_url + article.url, layout: 'button_count', action: 'like', :'show-faces' => 'false', share: 'false'} }            
+        .fb-like{data: {href: data.site.base_url + article.url, layout: 'button_count', action: 'like', :'show-faces' => 'false', share: 'false'} }
