@@ -5,7 +5,7 @@ date: 2014-05-13 00:51:23 +0900
 tags: p4d, event
 ---
 
-![記念写真](images/201405/p4d-summer-camp.jpg)
+![記念写真](/images/201405/p4d-summer-camp.jpg)
 
 5/9(金) 〜 5/11(日) に P4D のメンバーを中心に夏合宿に行ってきました。
 
