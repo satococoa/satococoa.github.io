@@ -114,14 +114,25 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
 
-configure :development do
-  activate :google_analytics do |ga|
-    ga.tracking_id = false
-  end
-end
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-32351198-1'
 
-configure :build do
-  activate :google_analytics do |ga|
-    ga.tracking_id = 'UA-32351198-1'
-  end
+  # Removing the last octet of the IP address (default = false)
+  ga.anonymize_ip = false
+
+  # Tracking across a domain and its subdomains (default = nil)
+  # ga.domain_name = 'example.com'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  ga.allow_linker = false
+
+  # Tracking Code Debugger (default = false)
+  ga.debug = false
+
+  # Tracking in development environment (default = true)
+  ga.development = true
+
+  # Compress the JavaScript code (default = false)
+  ga.minify = false
 end
