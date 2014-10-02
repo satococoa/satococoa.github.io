@@ -8,7 +8,7 @@ tags: p4d, git, github
 [PHPカンファレンス2014](http://phpcon.php.gr.jp/w/2014/) で [P4D](http://prog4designer.github.io) として [Web デザイナ向け GitHub ハンズオン](https://joind.in/talk/view/12049) を開催します。
 
 今回のハンズオンは前半・後半の2部構成で行います。
-後半に関しては [PHP カンファレンスの参加登録](http://phpcon.doorkeeper.jp/events/15532) 以外にハンズオンへの [参加登録](http://example.com) も必要ですので、希望者は **忘れずに** お願いいたします。
+後半に関しては [PHP カンファレンスの参加登録](http://phpcon.doorkeeper.jp/events/15532) 以外にハンズオンへの [参加登録](http://p4d.connpass.com/event/9091/) も必要ですので、希望者は **忘れずに** お願いいたします。
 
 (前半は PHP カンファレンスの参加登録だけでご参加いただけます。)
 
@@ -39,4 +39,4 @@ Git についての事前知識は特に必要ありません。また、Git の
 - GitHub アカウントを取得しておいてください
 - [GitHub for Mac](https://mac.github.com/) か [GitHub for Windows](https://windows.github.com/) をインストールしてきてください
 
-ハンズオンへの参加希望の方は [あとで書く](http://example.com) から参加者登録をお願いします。
+ハンズオンへの参加希望の方は [Web デザイナ向け GitHub ハンズオン in PHPカンファレンス2014](http://p4d.connpass.com/event/9091/) から参加者登録をお願いします。
