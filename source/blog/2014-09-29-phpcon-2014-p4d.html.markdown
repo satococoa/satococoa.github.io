@@ -35,7 +35,7 @@ Git についての事前知識は特に必要ありません。また、Git の
 
 参加される方は必ず以下の準備をしてきてください
 
-- ノート PC と、テザリングやモバイル Wifi などのインターネット接続環境を準備してきてください
+- 充電が十分なノート PC
 - GitHub アカウントを取得しておいてください
 - [GitHub for Mac](https://mac.github.com/) か [GitHub for Windows](https://windows.github.com/) をインストールしてきてください
 
