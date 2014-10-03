@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+<link href="../../../../../stylesheets/application-a278867e.css" media="screen" rel="stylesheet" type="text/css" />
+<script async='async' charset='utf-8' src='http://b.st-hatena.com/js/bookmark_button.js' type='text/javascript'></script>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script async charset='utf-8' src='//platform.twitter.com/widgets.js'></script>
+<title>
+satococoa's blog - 第1回RubyMotion勉強会を開催しました
+</title>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+</head>
+<body>
+<div id='fb-root'></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=252361011596763";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class='global_header'>
+<h1>
+<a href="/">satococoa's blog</a>
+</h1>
+<div class='self_links'>
+<a href="https://facebook.com/satoshi.ebisawa"><i class='fa fa-facebook'></i>
+</a>
+<a href="https://twitter.com/satococoa"><i class='fa fa-twitter'></i>
+</a>
+<a href="https://github.com/satococoa"><i class='fa fa-github'></i>
+</a>
+</div>
+</div>
+
+<nav class='topic_path'>
+<ul>
+<li>
+<a href="/">Top</a>
+</li>
+<li>第1回RubyMotion勉強会を開催しました</li>
+</ul>
+</nav>
+<div id='main' role='main'>
+<div class='article'>
+<div class='main'>
+<h2>
+<a href="/blog/2012/08/05/rubymotionjp-meetup-1st/">第1回RubyMotion勉強会を開催しました</a>
+</h2>
+<p>報告が遅くなってしまいましたが、7/22(日)に無事に<a href="http://connpass.com/event/665/">第1回RubyMotion勉強会</a>を開催しましたのでご報告します。</p>
+
+<p>まだRubyMotion自体の発売からあまり時間が経っていないことがあって、みんなで半日かけて勉強する内容がちゃんとあるかなぁ。。。というのが最初の不安でしたが、ふたを開けてみると発表2本、LT3本、オープンセッション2本という充実した内容で開催することができました。</p>
+
+<h2>発表1 RubyMotionは誰得？ (+ 宣伝)</h2>
+
+<ul>
+<li>発表者: <a href="https://twitter.com/satococoa">@satococoa</a></li>
+<li>資料: <a href="https://speakerdeck.com/u/satococoa/p/rubymotion-hashui-de-%3F">RubyMotionは誰得？</a></li>
+</ul>
+
+<script async class="speakerdeck-embed" data-id="500b40cf4eac5400020565f7" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>実際にRubyMotionを使って仕事をしてみた経験から、現状のRubyMotionはどんな人にお勧めできて、どんな人は待った方がいいのか、というお話をさせていただきました。</p>
+
+<p>このときにお話しした、僕が仕事でRubyMotionで開発した<a href="http://itunes.apple.com/jp/app/batteri-by-dapan/id538707566?mt=8">アプリ</a>ですが、見事にAppStoreの無料トップを獲得しました！RubyMotionでも問題なく仕事ができることの証明ができたと思います。  </p>
+
+<p>（こっそり宣伝: RubyMotionやRailsでお仕事したいエンジニアさんや、スマートフォンアプリの開発に携わりたいデザイナーさん、ディレクターさんはいらっしゃいませんか？お気軽に@satococoaまで声をおかけください。）</p>
+
+<h2>発表2 Differences CRuby/MacRuby/RubyMotion</h2>
+
+<ul>
+<li>発表者: <a href="https://twitter.com/watson1978">@watson1978</a> さん</li>
+<li>資料: <a href="https://speakerdeck.com/u/watson/p/rubymotion">Differences CRuby/MacRuby/RubyMotion</a></li>
+</ul>
+
+<script async class="speakerdeck-embed" data-id="500a284b4eac540002002cbe" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>タイトル通り、CRubyとMacRubyの違い、そしてMacRubyとRubyMotionの違いについてお話ししていただきました。</p>
+
+<p>RubyMotionのソースコードのほとんどはMacRubyと同じで、大きな違いは以下の3点だそうです。</p>
+
+<ul>
+<li>Rubyソースをネイティブの実行ファイルにコンパイル</li>
+<li>添付ライブラリは廃止 (Kernel#requireメソッドも動かない)</li>
+<li>GCを独自に実装</li>
+</ul>
+
+<p>GC周りは今後RubyMotionもよりよいものに実装が変わるらしいですし、それがMacRubyの方へも実装されるかもしれない、という耳寄りな情報もありました。</p>
+
+<p>この資料は、MacRubyやRubyMotionをやる人にとっては必見だと思います。詳しい内容は資料をご参照 or 直接@watson1978さんまで！</p>
+
+<h2>LT1 RubyMotion 1.15で追加されたtest周りの話</h2>
+
+<ul>
+<li>発表者: <a href="https://twitter.com/pchw">@pchw</a> さん</li>
+<li>資料: <a href="https://speakerdeck.com/u/pchw/p/rubymotion-1-dot-15dezhui-jia-saretatestzhou-rifalsehua">RubyMotion 1.15で追加されたtest周りの話</a></li>
+</ul>
+
+<script async class="speakerdeck-embed" data-id="500eced96005c30002059d98" data-ratio="1.7297297297297298" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>1.15で実装された、UIAutomationを利用したテストをRubyで書けてしまうRubyMotionの新機能を、デモを交えて紹介していただきました。ぐりぐりシミュレータが動く様は、まるでSeleniumで書かれたテストを動かしているようでした。</p>
+
+<h2>LT2 SublimeRubyMotionBuilderの紹介</h2>
+
+<ul>
+<li>発表者: <a href="https://twitter.com/haraken3">@haraken3</a> さん</li>
+<li>資料: <a href="https://speakerdeck.com/u/haraken3/p/sublimerubymotionbuilderfalseshao-jie">SublimeRubyMotionBuilderの紹介</a></li>
+</ul>
+
+<script async class="speakerdeck-embed" data-id="500bf388d4056800020008b7" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>当日会場で使っているエディタについて尋ねたところ、一番多かったのがSublime Text 2でした。 (ちなみに次点はEmacs)<br>
+そのSublime Text 2用のRubyMotionプラグインの作者様に作ろうと思ったきっかけやプラグインの紹介などをしていただきました。</p>
+
+<p>このプラグイン、AppStoreの複数の国で有料アプリ1位を獲得したEverClipの作者さんも使っているそうで、もはや完全に世界的に定番となっています。</p>
+
+<blockquote>
+<p>I use Sublime Text 2 with the RubyMotion plugin which is extremely handy.</p>
+</blockquote>
+
+<p>引用: <a href="http://blog.rubymotion.com/post/27906866028/rubymotion-success-story-everclip">RubyMotion Success Story: EverClip</a></p>
+
+<h2>LT3 nitronの紹介</h2>
+
+<ul>
+<li>発表者: <a href="https://twitter.com/mah_lab">@mah_lab</a> さん</li>
+</ul>
+
+<p>RubyMotion用のgemである、<a href="https://github.com/mattgreen/nitron">nitron</a>の紹介をしていただきました。</p>
+
+<p>RubyMotionでCoreDataをActiveRecord風に使えるようになっていたり、とても短い記述でTableViewControllerを使ったviewが書けたりする、「未来を感じる」gemでした。</p>
+
+<p>ただし、未来を感じつつも現実はテストコードがゼロというオチもあり。。。。うーん。</p>
+
+<h2>オープンセッション</h2>
+
+<p>当日にみんなの話したい/知りたいところを募って、2セッション行うことにしました。</p>
+
+<h3>1. <a href="http://rubymotion-tutorial.com">RubyMotion Tutorial</a> をやってみる</h3>
+
+<p>まだRubyMotionを購入されていない方もいたので、RubyMotionを使った開発がどのようなものか、という実例を見るという意味も兼ねて、僕がプロジェクタに自分のスクリーンを映しつつ、ブツブツつぶやきながらやれるところまで実際にコードを書いてみました。</p>
+
+<h3>2. nitronソースコードリーディング</h3>
+
+<p><a href="https://twitter.com/mah_lab">@mah_lab</a>さんにリードしていただきながら、nitronのソースコードを読んでみました。</p>
+
+<p>まだまだ発展途上という感じもありましたが、今後こういったライブラリが増えてくると、きっとRubyMotionの優位性が上がってくるのかなぁというのが個人的な感想です。</p>
+
+<h2>今後について</h2>
+
+<p>日本語の情報をそろそろまとめていこう、という話が懇親会で挙がり、今後以下のような活動をしていこうと思います。</p>
+
+<h3>日本語でRubyMotionについて語ったり、相談できる場を作る</h3>
+
+<p>Facebook上に既にグループがありますので、そちらを使わせていただくことにしました。<br>
+参加自由ですので、どうぞお気軽に加わってください。</p>
+
+<ul>
+<li><a href="https://www.facebook.com/groups/149315595198329/">RubyMotion JP(facebook group)</a></li>
+</ul>
+
+<h3>github上で有益なコンテンツの翻訳等を公開する。</h3>
+
+<ul>
+<li><a href="http://rubymotion.jp">RubyMotionJP</a></li>
+</ul>
+
+<p>Github上にOrganizationを作って活動しています。<a href="https://github.com/RubyMotionJP">https://github.com/RubyMotionJP</a><br>
+協力していただける方はぜひGithubアカウントを添えて@satococoaまで！</p>
+
+<p>第2回のRubyMotion勉強会は事例等がたまってきた頃にやろうかなと思っています。</p>
+
+<p>それとは別に、場所さえ確保できれば月1回くらいのペースでもくもく&amp;相談ができるといいなぁと、今のところ考えています。</p>
+
+<p>あと、<a href="http://jp.rubyist.net/magazine/">Rubyist Magazine - るびま</a>に記事を書く予定です。次号に間に合うように絶賛執筆中ですのでお楽しみに。</p>
+
+<p>最後に、ご参加いただきましたみなさんやスタッフ、発表者としてご協力いただいたみなさん、そして会場を提供していただいた<a href="http://www.kddi-webcommunications.co.jp">KDDI ウェブコミュニケーションズ</a>様、本当にありがとうございました。<br>
+今後ともよろしくお願いいたします。</p>
+
+</div>
+<div class='meta'>
+<div class='published_at'>
+2012-08-05
+18:07
+</div>
+<ul class='tags'>
+<li>
+<a href="/blog/tags/rubymotion/">rubymotion</a>
+</li>
+<li>
+<a href="/blog/tags/event/">event</a>
+</li>
+</ul>
+<ul class='social'>
+<li class='hatena'>
+<a class='hatena-bookmark-button' data-hatena-bookmark-lang='ja' data-hatena-bookmark-layout='standard-balloon' data-hatena-bookmark-title='タイトル' href='http://b.hatena.ne.jp/entry/http://satococoa.github.io/blog/2012/08/05/rubymotionjp-meetup-1st/' title='このエントリーをはてなブックマークに追加'>
+<img alt='このエントリーをはてなブックマークに追加' height='20' src='http://b.st-hatena.com/images/entry-button/button-only@2x.png' style='border: none;' width='20'>
+</a>
+</li>
+<li class='twitter'>
+<a class='twitter-share-button' data-lang='en' data-url='http://satococoa.github.io/blog/2012/08/05/rubymotionjp-meetup-1st/' href='https://twitter.com/share'>Tweet</a>
+</li>
+<li class='facebook'>
+<div class='fb-like' data-action='like' data-href='http://satococoa.github.io/blog/2012/08/05/rubymotionjp-meetup-1st/' data-layout='button_count' data-share='false' data-show-faces='false'></div>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+<div class='global_footer'>
+<div class='recent'>
+<h2>Recent Articles</h2>
+<ul>
+<li>
+<a href="/blog/2014/09/29/phpcon-2014-p4d/">Web デザイナ向け GitHub ハンズオン at PHPカンファレンス2014</a>
+</li>
+<li>
+<a href="/blog/2014/09/07/stctabview/">STCTabView というライブラリを作った</a>
+</li>
+<li>
+<a href="/blog/2014/08/07/yurufuwa/">ゆるふわ Development Club</a>
+</li>
+<li>
+<a href="/blog/2014/07/20/nuhack/">nuhack を開催した</a>
+</li>
+<li>
+<a href="/blog/2014/05/13/p4d-summer-camp-2014/">P4D 夏合宿 2014</a>
+</li>
+<li>
+<a href="/blog/2014/02/23/released-pplog-ios-client/">pplog iOS アプリをリリースしました</a>
+</li>
+<li>
+<a href="/blog/2014/01/14/yokohama-rb-40th/">Yokohama.rb 40th</a>
+</li>
+<li>
+<a href="/blog/2014/01/14/p4d-35th/">第35回 デザイナー向けプログラム部</a>
+</li>
+<li>
+<a href="/blog/2014/01/02/new-year-s-resolution-2014/">2014 年の抱負</a>
+</li>
+<li>
+<a href="/blog/2014/01/01/change-to-middleman-blog/">Middleman blog に変えてみた</a>
+</li>
+</ul>
+</div>
+<div class='tags'>
+<h2>Tags</h2>
+<ul>
+<li>
+<a href="/blog/tags/日記/">日記</a>
+(3)
+</li>
+<li>
+<a href="/blog/tags/community/">community</a>
+(2)
+</li>
+<li>
+<a href="/blog/tags/event/">event</a>
+(16)
+</li>
+<li>
+<a href="/blog/tags/rubymotion/">rubymotion</a>
+(13)
+</li>
+<li>
+<a href="/blog/tags/rails/">rails</a>
+(3)
+</li>
+<li>
+<a href="/blog/tags/linux/">linux</a>
+(2)
+</li>
+<li>
+<a href="/blog/tags/design/">design</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/ruby/">ruby</a>
+(4)
+</li>
+<li>
+<a href="/blog/tags/mysql/">mysql</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/sublimetext/">sublimetext</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/middleman/">middleman</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/p4d/">p4d</a>
+(4)
+</li>
+<li>
+<a href="/blog/tags/yokohamarb/">yokohamarb</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/pplog/">pplog</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/ios/">ios</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/ydclub/">ydclub</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/ios/">iOS</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/cocoapods/">CocoaPods</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/git/">git</a>
+(1)
+</li>
+<li>
+<a href="/blog/tags/github/">github</a>
+(1)
+</li>
+</ul>
+</div>
+<div class='by_year'>
+<h2>By Year</h2>
+<ul>
+<li>
+<a href="/blog/2014/">2014</a>
+(10)
+</li>
+<li>
+<a href="/blog/2013/">2013</a>
+(11)
+</li>
+<li>
+<a href="/blog/2012/">2012</a>
+(18)
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-32351198-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
