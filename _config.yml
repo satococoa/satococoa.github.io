@@ -1,0 +1,8 @@
+title: satococoa
+description: Satoshi Ebisawa
+google_analytics: UA-32351198-1
+show_downloads: true
+theme: jekyll-theme-dinky
+
+gems:
+  - jekyll-mentions
