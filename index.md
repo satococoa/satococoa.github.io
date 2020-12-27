@@ -1,13 +1,13 @@
 ### Satoshi Ebisawa
-Web, iOS エンジニアです。
+
+Web系エンジニアです。
 
 - Blog(Japanese): http://satococoa.hatenablog.com
-- Facebook: https://www.facebook.com/satoshi.ebisawa
 - Twitter: https://twitter.com/satococoa
-- GitHub: satococoa
-- Presentations: https://speakerdeck.com/satococoa
+- [LAPRAS Profile](https://lapras.com/public/0GUNAIN)
 
-### 運営コミュニティ等
+
+### 運営コミュニティ等 (最近どちらも止まってます)
 
 - [P4D (デザイナー向けプログラム部)](http://prog4designer.github.io)
 - [ゆるふわ Development Club](http://yurufuwa.club)
