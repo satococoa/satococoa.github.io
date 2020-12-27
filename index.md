@@ -2,8 +2,8 @@
 
 Web系エンジニアです。
 
-- Blog(Japanese): http://satococoa.hatenablog.com
-- Twitter: https://twitter.com/satococoa
+- Blog(Japanese): [https://satococoa.hatenablog.com](https://satococoa.hatenablog.com)
+- Twitter: [@satococoa](https://twitter.com/satococoa)
 - [LAPRAS Profile](https://lapras.com/public/0GUNAIN)
 
 
